@@ -1,11 +1,103 @@
-# BILL SPY
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILL SPY</title>
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #000;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        h1 {
+            color: #f2b400;
+        }
+        .content {
+            margin: 20px;
+        }
+        .upload-section {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .upload-section input[type="file"] {
+            padding: 10px;
+            background-color: #f2b400;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .upload-section button {
+            background-color: #f2b400;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .upload-section button:hover {
+            background-color: #ff9c00;
+        }
+        footer {
+            background-color: #000;
+            color: #f2b400;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BILL SPY</h1>
+        <p>Bem-vindo ao mundo de caos e mistério!</p>
+    </header>
 
-Bem-vindo ao **BILL SPY** — um projeto feito contra as coisa desnecessárias das escolas
+    <div class="content">
+        <h2>Área Exclusiva para Administradores</h2>
+        <p>Faça upload de arquivos de forma fácil e rápida. Apenas você pode fazer isso!</p>
+        
+        <div class="upload-section">
+            <h3>Upload de Arquivos</h3>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" name="file" id="fileInput" />
+                <br><br>
+                <button type="button" onclick="uploadFile()">Upload</button>
+            </form>
+            <p id="uploadStatus" class="hidden">Arquivo enviado com sucesso!</p>
+        </div>
+    </div>
 
-## 📥 Proibição de Downloads
+    <footer>
+        <p>&copy; 2025 Bill Spy. Todos os direitos reservados.</p>
+    </footer>
 
-Qualquer download ou distribuição dos dados fontes do repositório **será totalmente proibido**. O conteúdo aqui é exclusivamente para visualização e uso pessoal, sem permissão para redistribuição.
-
----
-
-**Feito com poder e caos, por spy s2.**
+    <script>
+        // Função para upload de arquivo
+        function uploadFile() {
+            var form = document.getElementById('uploadForm');
+            var formData = new FormData(form);
+            var fileInput = document.getElementById('fileInput');
+            
+            // Verificar se um arquivo foi selecionado
+            if (file
