@@ -3,117 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BILL SPY</title>
+    <title>Meu Site Moderno</title>
     <style>
-        body {
-            background-color: #222;
-            color: white;
-            font-family: 'Arial', sans-serif;
+        /* Resetando margens e paddings */
+        * {
             margin: 0;
             padding: 0;
-            text-align: center;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Cabeçalho */
         header {
-            background-color: #000;
-            padding: 20px;
-            font-size: 30px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        h1 {
-            color: #f2b400;
-        }
-        .content {
-            margin: 20px;
-        }
-        .upload-section {
             background-color: #333;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
-        }
-        .upload-section input[type="file"] {
-            padding: 10px;
-            background-color: #f2b400;
-            color: black;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .upload-section button {
-            background-color: #f2b400;
-            color: black;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-        .upload-section button:hover {
-            background-color: #ff9c00;
-        }
-        footer {
-            background-color: #000;
-            color: #f2b400;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
         }
-        .hidden {
-            display: none;
+
+        header h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
         }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>BILL SPY</h1>
-        <p>Bem-vindo ao mundo de caos e mistério!</p>
-    </header>
 
-    <div class="content">
-        <h2>Área Exclusiva para Administradores</h2>
-        <p>Faça upload de arquivos de forma fácil e rápida. Apenas você pode fazer isso!</p>
-        
-        <div class="upload-section">
-            <h3>Upload de Arquivos</h3>
-            <form id="uploadForm" enctype="multipart/form-data">
-                <input type="file" name="file" id="fileInput" />
-                <br><br>
-                <button type="button" onclick="uploadFile()">Upload</button>
-            </form>
-            <p id="uploadStatus" class="hidden">Arquivo enviado com sucesso!</p>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Bill Spy. Todos os direitos reservados.</p>
-    </footer>
-
-    <script>
-        // Função para upload de arquivo
-        function uploadFile() {
-            var form = document.getElementById('uploadForm');
-            var formData = new FormData(form);
-            var fileInput = document.getElementById('fileInput');
-            
-            // Verificar se um arquivo foi selecionado
-            if (fileInput.files.length === 0) {
-                alert('Por favor, selecione um arquivo para fazer o upload.');
-                return;
-            }
-            
-            // Enviar o arquivo (aqui estamos apenas simulando o upload)
-            alert('Simulando upload do arquivo...');
-            
-            // Simulando sucesso no upload
-            document.getElementById('uploadStatus').classList.remove('hidden');
-            setTimeout(function() {
-                document.getElementById('uploadStatus').classList.add('hidden');
-            }, 3000);
+        /* Navegação */
+        nav {
+            background-color: #1c1c1c;
+            overflow: hidden;
         }
-    </script>
-</body>
-</html>
+
+        nav a {
+            display: inline-block;
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #f39c12;
+        }
+
+        /* Seções principais */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Formulário de Contato */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radi
