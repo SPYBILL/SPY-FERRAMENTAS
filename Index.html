@@ -100,4 +100,20 @@
             var fileInput = document.getElementById('fileInput');
             
             // Verificar se um arquivo foi selecionado
-            if (file
+            if (fileInput.files.length === 0) {
+                alert('Por favor, selecione um arquivo para fazer o upload.');
+                return;
+            }
+            
+            // Enviar o arquivo (aqui estamos apenas simulando o upload)
+            alert('Simulando upload do arquivo...');
+            
+            // Simulando sucesso no upload
+            document.getElementById('uploadStatus').classList.remove('hidden');
+            setTimeout(function() {
+                document.getElementById('uploadStatus').classList.add('hidden');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
