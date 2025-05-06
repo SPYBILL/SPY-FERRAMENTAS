@@ -1,99 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Definindo a fonte padrão e o fundo */
 body {
-  margin: 0;
-  font-family: 'VT323', monospace;
-  background-color: #121212;
-  color: #f2f2f2;
-  background-image: radial-gradient(circle, #333 0%, #0f0f0f 100%);
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Estilizando o cabeçalho */
 header {
-  background: linear-gradient(to right, #3b3b3b, #0a0a0a);
-  text-align: center;
-  padding: 30px 10px;
-  border-bottom: 2px solid #facc15;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-header .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+header h1 {
+    font-size: 2.5rem;
 }
 
-header img {
-  width: 60px;
-  filter: drop-shadow(0 0 15px #facc15);
-}
-
-h1 {
-  font-size: 2.5em;
-  color: #facc15;
-  text-shadow: 0 0 10px #facc15;
-}
-
-nav {
-  background-color: #222;
-  padding: 20px 0;
-  border-bottom: 1px solid #333;
-}
-
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-}
-
-nav a {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  padding: 8px 16px;
-  text-decoration: none;
-  border: 1px solid #444;
-  border-radius: 4px;
-  background-color: #333;
-  transition: all 0.3s;
-}
-
-nav a img {
-  width: 40px; /* Ajuste o tamanho da imagem */
-  height: 40px;
-  margin-right: 10px;
-  transition: transform 0.3s;
-}
-
-nav a:hover {
-  background-color: #facc15;
-  color: #000;
-  box-shadow: 0 0 8px #facc15;
-}
-
-nav a:hover img {
-  transform: scale(1.1); /* Efeito de zoom suave ao passar o mouse */
-}
-
+/* Seção de plataformas */
 main {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-section h2 {
-  color: #facc15;
-  font-size: 2em;
-  margin-bottom: 10px;
+.platforms {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
+.platform {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.platform img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.platform p {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Rodapé */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #111;
-  color: #888;
-  font-size: 0.9em;
-  border-top: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
