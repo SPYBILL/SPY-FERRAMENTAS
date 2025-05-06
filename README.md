@@ -1,8 +1,6 @@
 # BILL SPY
 
-Bem-vindo ao **BILL SPY** — um projeto inspirado no tema **Bill Cipher** de *Gravity Falls*.
-
-![Bill Cipher](https://upload.wikimedia.org/wikipedia/pt/e/e5/Bill_Cipher.png)
+Bem-vindo ao **BILL SPY** — um projeto feito contra as coisa desnecessárias das escolas
 
 ## 📥 Proibição de Downloads
 
@@ -10,4 +8,4 @@ Qualquer download ou distribuição dos dados fontes do repositório **será tot
 
 ---
 
-**Feito com poder e caos, inspirado por Bill Cipher.**
+**Feito com poder e caos, por spy s2.**
