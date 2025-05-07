@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "Google Sala de Aula",
+    "link": "https://classroom.google.com",
+    "descricao": "Acesse suas aulas do CMSP.",
+    "icone": "assets/classroom.png"
+  },
+  {
+    "nome": "CMSP TV",
+    "link": "https://centrodemidiasp.educacao.sp.gov.br",
+    "descricao": "Acompanhe transmissões ao vivo.",
+    "icone": "assets/cmsp-tv.png"
+  }
+]
